@@ -32,10 +32,9 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ht6-19-uQO">
                                 <rect key="frame" x="20" y="140" width="374" height="32"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title="Third"/>
-                                    <segment title="Fourth"/>
+                                    <segment title="Genre"/>
+                                    <segment title="New Release"/>
+                                    <segment title="The Arts"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentedChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="xWd-ET-PNr"/>
