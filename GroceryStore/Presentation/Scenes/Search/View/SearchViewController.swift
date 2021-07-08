@@ -8,10 +8,16 @@
 import UIKit
 
 class SearchViewController: BaseViewController {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        searchBar.delegate = self
 
     }
+}
+
+extension SearchViewController: UISearchBarDelegate {
 }
