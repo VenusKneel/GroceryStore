@@ -22,23 +22,27 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="Jc9-0m-QMx"/>
                                 </constraints>
+                                <offsetWrapper key="searchTextPositionAdjustment" horizontal="10" vertical="0.0"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
                                     <string>Title</string>
                                 </scopeButtonTitles>
                             </searchBar>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ht6-19-uQO">
-                                <rect key="frame" x="133" y="231" width="131" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ht6-19-uQO">
+                                <rect key="frame" x="20" y="140" width="374" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
+                                    <segment title="Third"/>
+                                    <segment title="Fourth"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="xWd-ET-PNr"/>
+                                </connections>
                             </segmentedControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8pL-9u-2hd">
-                                <rect key="frame" x="109" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8pL-9u-2hd">
+                                <rect key="frame" x="0.0" y="191" width="414" height="705"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qO3-Xp-tzY">
                                     <size key="itemSize" width="128" height="128"/>
@@ -48,7 +52,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PRc-2p-A1n">
-                                        <rect key="frame" x="56" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Imv-Me-boS">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -61,13 +65,22 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="8pL-9u-2hd" firstAttribute="top" secondItem="Ht6-19-uQO" secondAttribute="bottom" constant="20" id="H9R-ut-ohQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ht6-19-uQO" secondAttribute="trailing" constant="20" id="HQI-tk-ukI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8pL-9u-2hd" secondAttribute="trailing" id="IDl-ft-ymz"/>
                             <constraint firstItem="glW-gN-U2C" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="SUd-n7-LMo"/>
+                            <constraint firstAttribute="bottom" secondItem="8pL-9u-2hd" secondAttribute="bottom" id="Sb8-Xh-INX"/>
+                            <constraint firstItem="Ht6-19-uQO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Sml-JU-aZe"/>
+                            <constraint firstItem="8pL-9u-2hd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="a9G-zw-85v"/>
                             <constraint firstItem="glW-gN-U2C" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="64" id="fIL-zN-rG7"/>
                             <constraint firstItem="glW-gN-U2C" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-20" id="mnH-lt-8pM"/>
+                            <constraint firstItem="Ht6-19-uQO" firstAttribute="top" secondItem="glW-gN-U2C" secondAttribute="bottom" constant="20" id="rUI-xh-Iep"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectView" destination="8pL-9u-2hd" id="ieG-8X-QvU"/>
                         <outlet property="searchBar" destination="glW-gN-U2C" id="ceg-Dd-rFr"/>
+                        <outlet property="segmentedControl" destination="Ht6-19-uQO" id="ZZF-BS-B62"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

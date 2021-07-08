@@ -10,12 +10,17 @@ import UIKit
 class SearchViewController: BaseViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
-
+    @IBOutlet weak var collectView: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
-
+    }
+    
+    @IBAction func segmentedChanged(_ sender: UISegmentedControl) {
     }
 }
 
