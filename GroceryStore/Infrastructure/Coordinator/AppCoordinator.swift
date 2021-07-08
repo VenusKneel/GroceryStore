@@ -30,6 +30,12 @@ final class AppCoordinator: CoordinatorProtocol {
         window?.makeKeyAndVisible()
     }
     
+    func proceedToSearch() {
+        let vc = SearchViewController.instantiateFromStoryboard()
+        vc.coordinator = self
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func popViewController() {
         navigationController?.popViewController(animated: true)
     }
