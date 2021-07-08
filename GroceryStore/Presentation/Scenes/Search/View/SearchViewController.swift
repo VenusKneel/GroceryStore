@@ -29,6 +29,7 @@ class SearchViewController: BaseViewController {
     }
     
     @IBAction func segmentedChanged(_ sender: UISegmentedControl) {
+        print(sender.titleForSegment(at: sender.selectedSegmentIndex))
     }
 }
 
