@@ -42,7 +42,7 @@
                                 </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8pL-9u-2hd">
-                                <rect key="frame" x="0.0" y="191" width="414" height="705"/>
+                                <rect key="frame" x="20" y="191" width="374" height="705"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qO3-Xp-tzY">
                                     <size key="itemSize" width="128" height="128"/>
@@ -67,11 +67,11 @@
                         <constraints>
                             <constraint firstItem="8pL-9u-2hd" firstAttribute="top" secondItem="Ht6-19-uQO" secondAttribute="bottom" constant="20" id="H9R-ut-ohQ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ht6-19-uQO" secondAttribute="trailing" constant="20" id="HQI-tk-ukI"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8pL-9u-2hd" secondAttribute="trailing" id="IDl-ft-ymz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8pL-9u-2hd" secondAttribute="trailing" constant="20" id="IDl-ft-ymz"/>
                             <constraint firstItem="glW-gN-U2C" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="SUd-n7-LMo"/>
                             <constraint firstAttribute="bottom" secondItem="8pL-9u-2hd" secondAttribute="bottom" id="Sb8-Xh-INX"/>
                             <constraint firstItem="Ht6-19-uQO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Sml-JU-aZe"/>
-                            <constraint firstItem="8pL-9u-2hd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="a9G-zw-85v"/>
+                            <constraint firstItem="8pL-9u-2hd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="a9G-zw-85v"/>
                             <constraint firstItem="glW-gN-U2C" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="64" id="fIL-zN-rG7"/>
                             <constraint firstItem="glW-gN-U2C" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-20" id="mnH-lt-8pM"/>
                             <constraint firstItem="Ht6-19-uQO" firstAttribute="top" secondItem="glW-gN-U2C" secondAttribute="bottom" constant="20" id="rUI-xh-Iep"/>
