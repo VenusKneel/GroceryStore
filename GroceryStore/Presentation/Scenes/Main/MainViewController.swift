@@ -1,13 +1,13 @@
 //
 //  ViewController.swift
-//  GroceryStore
+//  FourthTeamWork
 //
-//  Created by Beqa Tabunidze on 08.07.21.
+//  Created by user200328 on 7/8/21.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
