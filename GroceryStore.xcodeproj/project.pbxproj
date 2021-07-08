@@ -127,9 +127,9 @@
 		DC1EC5282697131A006B52CC /* GroceryStore */ = {
 			isa = PBXGroup;
 			children = (
+				DC1EC54026971441006B52CC /* App */,
 				DC1EC557269714F0006B52CC /* Presentation */,
 				DC1EC54126971452006B52CC /* Infrastructure */,
-				DC1EC54026971441006B52CC /* App */,
 				DC1EC563269715D5006B52CC /* Resources */,
 				DC1EC564269715E2006B52CC /* Supporting Files */,
 				DC1EC5322697131A006B52CC /* GroceryStore.xcdatamodeld */,
@@ -215,18 +215,10 @@
 		DC1EC55D2697153D006B52CC /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				DC1EC5602697155B006B52CC /* Base */,
+				DC1EC56126971595006B52CC /* MainViewController.storyboard */,
 				DC1EC55E26971553006B52CC /* MainViewController.swift */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		DC1EC5602697155B006B52CC /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				DC1EC56126971595006B52CC /* MainViewController.storyboard */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		DC1EC563269715D5006B52CC /* Resources */ = {
